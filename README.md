@@ -11,7 +11,7 @@ Create a PostgreSQL 17 container using Docker:
 ```bash
 docker run --name postgres-training \
   -e POSTGRES_USER=nora \
-  -e POSTGRES_PASSWORD=postgres123 \
+  -e POSTGRES_PASSWORD=********* \
   -e POSTGRES_DB=training_store \
   -p 5432:5432 \
   -d postgres:17
