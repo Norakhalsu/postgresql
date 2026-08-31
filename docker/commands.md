@@ -6,7 +6,7 @@ Docker commands used to create and manage the PostgreSQL training environment.
 
 ```bash
 docker run --name postgres-training \
-  -e POSTGRES_USER=nora \
+  -e POSTGRES_USER=nourah \
   -e POSTGRES_PASSWORD=******** \
   -e POSTGRES_DB=training_store \
   -p 5432:5432 \
@@ -17,7 +17,7 @@ This creates:
 
 - Container: `postgres-training`
 - PostgreSQL version: `17`
-- User: `nora`
+- User: `nourah`
 - Database: `training_store`
 - Port: `5432`
 
@@ -36,7 +36,7 @@ docker ps
 ## 4. Connect to PostgreSQL
 
 ```bash
-docker exec -it postgres-training psql -U nora -d training_store
+docker exec -it postgres-training psql -U nourah -d training_store
 ```
 
 Successful connection:
@@ -60,7 +60,7 @@ docker start postgres-training
 ## 7. Reconnect After Starting
 
 ```bash
-docker exec -it postgres-training psql -U nora -d training_store
+docker exec -it postgres-training psql -U nourah -d training_store
 ```
 
 ## 8. Exit psql

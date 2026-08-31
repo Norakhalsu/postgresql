@@ -10,7 +10,7 @@ Create a PostgreSQL 17 container using Docker:
 
 ```bash
 docker run --name postgres-training \
-  -e POSTGRES_USER=nora \
+  -e POSTGRES_USER=nourah \
   -e POSTGRES_PASSWORD=********* \
   -e POSTGRES_DB=training_store \
   -p 5432:5432 \
@@ -28,7 +28,7 @@ docker ps
 Connect to the `training_store` database using `psql`:
 
 ```bash
-docker exec -it postgres-training psql -U nora -d training_store
+docker exec -it postgres-training psql -U nourah -d training_store
 ```
 
 After connecting, the PostgreSQL prompt appears as:
@@ -253,7 +253,7 @@ CREATE TABLE employees (
 ```sql
 INSERT INTO employees (name, skills)
 VALUES (
-    'Nora',
+    'nourah',
     ARRAY['Python', 'SQL', 'Docker']
 );
 ```
@@ -345,7 +345,7 @@ docker start postgres-training
 ## 38. Reconnect to PostgreSQL
 
 ```bash
-docker exec -it postgres-training psql -U nora -d training_store
+docker exec -it postgres-training psql -U nourah -d training_store
 ```
 
 ---
@@ -405,7 +405,7 @@ git commit -m "Initialize PostgreSQL learning project"
 ## 46. Connect Local Repository to GitHub
 
 ```bash
-git remote add origin https://github.com/Norakhalsu/postgresql.git
+git remote add origin https://github.com/nourahkhalsu/postgresql.git
 ```
 
 ## 47. Set Main Branch

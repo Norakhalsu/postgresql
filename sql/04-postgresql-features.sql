@@ -120,7 +120,7 @@ CREATE TABLE employees (
 
 INSERT INTO employees (name, skills)
 VALUES (
-    'Nora',
+    'nourah',
     ARRAY['Python', 'SQL', 'Docker']
 );
 
